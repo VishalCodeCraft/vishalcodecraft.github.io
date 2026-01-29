@@ -44,6 +44,8 @@ a:hover {
   text-decoration: underline;
 }
 
+
+
 /* ========================
    NAVBAR
 ======================== */
@@ -305,14 +307,32 @@ ul li {
 /* ========================
    CONTACT SECTION
 ======================== */
-#contact p {
-  margin-bottom: 12px;
-  font-size: 1rem;
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
 }
 
-#contact a {
-  font-weight: 500;
+.contact-icons a {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--card-bg, #1f1f1f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
+
+.contact-icons a:hover {
+  transform: translateY(-6px) scale(1.1);
+  background: #4f46e5; /* accent color */
+}
+
 
 /* ========================
    FOOTER
